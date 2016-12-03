@@ -1,0 +1,8 @@
+<h1>Sup</h1>
+<% if @photos %>
+  <ul>
+    <% @photos.each do |photo| %>
+      <li><%= img_tag(photo) %></li>
+    <% end %>
+  </ul>
+<% end %>

@@ -1,3 +1,5 @@
 get '/' do
-  erb :index
+  @photos = Photo.all
+  erb :'photos/index'
 end
+
